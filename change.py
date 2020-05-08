@@ -14,7 +14,8 @@ for line in lines:
 		sys.stderr.write("HEJ COŚ JEST ŹLE BO " + line)
 		exit(1)
 
-for line in lines:
+for i in range(len(lines)):
+	line = lines[i]
 	for key, val in mapy.items():
 		line = line.replace(key, val)
 	lines[i] = line

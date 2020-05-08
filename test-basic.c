@@ -26,7 +26,7 @@ int output;
 do { \
 	len = snprintf(buffer, 100, __VA_ARGS__); \
 	if ((lenRes = write(output, buffer, len)) != len) { \
-		fprintf("partial write %d of %d in %s\n", len, lenRes, buffer); \
+		fprintf(stderr, "partial write %d of %d in %s\n", len, lenRes, buffer); \
 	} \
 } while(0)
 
@@ -58,7 +58,7 @@ unsigned int rander() {
 }
 
 const char *getname() {
-	snprint(buffer, 100, "output%03d.txt", nr);
+	snprintf(buffer, 100, "part_output%03d.txt", nr);
 	return buffer;
 }
 
@@ -72,7 +72,7 @@ int main() {
 	
 	close(0);
 	close(1);
-	output = open(getname(), O_CREAT);
+	output = open(getname(), O_CREAT | O_RDWR);
 	
 	if (output < 0) {
 		fprintf(stderr, "nie ma pliku\n");
@@ -97,7 +97,7 @@ int main() {
 					fprintf(stderr, "nie możńa zamknąć pliku\n");
 					exit(1);
 				}
-				output = open(getname(), O_CREAT);
+				output = open(getname(), O_CREAT | O_RDWR);
 				if (output < 0) {
 					fprintf(stderr, "nie ma pliku\n");
 					exit(1);
@@ -135,7 +135,7 @@ int main() {
 						fprintf(stderr, "nie możńa zamknąć pliku\n");
 						exit(1);
 					}
-					output = open(getname(), O_CREAT);
+					output = open(getname(), O_CREAT | O_RDWR);
 					if (output < 0) {
 						fprintf(stderr, "nie ma pliku\n");
 						exit(1);
@@ -201,9 +201,15 @@ int main() {
 	
 	int res;
 	for (ullong i = 1; i < 200; i++) {
-		ullong kolej = (i * 130 + nr) * 50;
-		while (mtime() - start < kolej) {
-			msleep(1);
+		ullong kolej = (i * 130 + nr) * 100;
+		ullong teraz = mtime() - start;
+		while (teraz < kolej) {
+			if (kolej - teraz > 2000) {
+				msleep(kolej - teraz - 1900);
+			} else {
+				msleep(1);
+			}
+			teraz = mtime() - start;
 		}
 		ullong poczatek = (mtime() - start) - kolej;
 
@@ -254,7 +260,7 @@ int main() {
 		}
 
 		ullong roznica = (mtime() - start) - kolej;
-		if (roznica > 30) fprintf(stderr, FMT "Czas %llu,%llu,%llu niebezpiecznie duży\n", counter, nr, kolej, poczatek, roznica);
+		if (roznica > 90) fprintf(stderr, FMT "Czas %llu,%llu,%llu niebezpiecznie duży\n", counter, nr, kolej, poczatek, roznica);
 	}
 				
 	if(close(output) < 0) {

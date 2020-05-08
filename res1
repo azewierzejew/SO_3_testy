@@ -1,12 +1,4 @@
 00:000 mam nowe dziecko 1
-00:000 mam nowe dziecko 2
-00:000 mam nowe dziecko 3
-00:000 mam nowe dziecko 4
-00:000 mam nowe dziecko 5
-00:000 mam nowe dziecko 6
-00:000 mam nowe dziecko 7
-00:000 mam nowe dziecko 8
-00:000 mam nowe dziecko 9
 00:000 mam nowe dziecko 10
 00:000 mam nowe dziecko 11
 00:000 mam nowe dziecko 12
@@ -17,6 +9,7 @@
 00:000 mam nowe dziecko 17
 00:000 mam nowe dziecko 18
 00:000 mam nowe dziecko 19
+00:000 mam nowe dziecko 2
 00:000 mam nowe dziecko 20
 00:000 mam nowe dziecko 21
 00:000 mam nowe dziecko 22
@@ -27,6 +20,7 @@
 00:000 mam nowe dziecko 27
 00:000 mam nowe dziecko 28
 00:000 mam nowe dziecko 29
+00:000 mam nowe dziecko 3
 00:000 mam nowe dziecko 30
 00:000 mam nowe dziecko 31
 00:000 mam nowe dziecko 32
@@ -37,6 +31,7 @@
 00:000 mam nowe dziecko 37
 00:000 mam nowe dziecko 38
 00:000 mam nowe dziecko 39
+00:000 mam nowe dziecko 4
 00:000 mam nowe dziecko 40
 00:000 mam nowe dziecko 41
 00:000 mam nowe dziecko 42
@@ -47,6 +42,7 @@
 00:000 mam nowe dziecko 47
 00:000 mam nowe dziecko 48
 00:000 mam nowe dziecko 49
+00:000 mam nowe dziecko 5
 00:000 mam nowe dziecko 50
 00:000 mam nowe dziecko 51
 00:000 mam nowe dziecko 52
@@ -57,11 +53,15 @@
 00:000 mam nowe dziecko 57
 00:000 mam nowe dziecko 58
 00:000 mam nowe dziecko 59
+00:000 mam nowe dziecko 6
 00:000 mam nowe dziecko 60
 00:000 mam nowe dziecko 61
 00:000 mam nowe dziecko 62
 00:000 mam nowe dziecko 63
 00:000 mam nowe dziecko 64
+00:000 mam nowe dziecko 7
+00:000 mam nowe dziecko 8
+00:000 mam nowe dziecko 9
 00:001 jestem nowy 1
 00:002 jestem nowy 2
 00:003 jestem nowy 3
@@ -774,52 +774,52 @@
 26:065 zmieniam ojca: -1 errno: 1
 26:066 zmieniam ojca: -1 errno: 1
 26:067 a ja kończę
-26:068 czekałem szybko: PUSTO errno: 0
 26:068 czekałem szybko: 84 errno: 0
+26:068 czekałem szybko: PUSTO errno: 0
 26:069 zmieniam ojca: 0 errno: 0
 26:071 dzieci poszły jestem wolny
-26:071 zebrałem dziecko: BŁĄD errno: 10
+26:071 zebrałem dziecko: 103 errno: 0
 26:071 zebrałem dziecko: 79 errno: 0
 26:071 zebrałem dziecko: 87 errno: 0
-26:071 zebrałem dziecko: 103 errno: 0
+26:071 zebrałem dziecko: BŁĄD errno: 10
 26:072 dzieci poszły jestem wolny
-26:072 zebrałem dziecko: BŁĄD errno: 10
-26:072 zebrałem dziecko: 88 errno: 0
 26:072 zebrałem dziecko: 104 errno: 0
 26:072 zebrałem dziecko: 120 errno: 0
+26:072 zebrałem dziecko: 88 errno: 0
+26:072 zebrałem dziecko: BŁĄD errno: 10
 26:073 dzieci poszły jestem wolny
-26:073 zebrałem dziecko: BŁĄD errno: 10
-26:073 zebrałem dziecko: 89 errno: 0
 26:073 zebrałem dziecko: 105 errno: 0
-26:074 czekałem szybko: BŁĄD errno: 10
+26:073 zebrałem dziecko: 89 errno: 0
+26:073 zebrałem dziecko: BŁĄD errno: 10
 26:074 czekałem szybko: 106 errno: 0
+26:074 czekałem szybko: BŁĄD errno: 10
 26:076 a ja kończę
 26:077 a ja kończę
-26:078 czekałem szybko: PUSTO errno: 0
 26:078 czekałem szybko: 110 errno: 0
+26:078 czekałem szybko: PUSTO errno: 0
 26:079 dzieci poszły jestem wolny
-26:079 zebrałem dziecko: BŁĄD errno: 10
-26:079 zebrałem dziecko: 95 errno: 0
 26:079 zebrałem dziecko: 111 errno: 0
+26:079 zebrałem dziecko: 95 errno: 0
+26:079 zebrałem dziecko: BŁĄD errno: 10
 26:080 a ja kończę
 26:081 zmieniam ojca: 0 errno: 0
 26:082 czekałem szybko: PUSTO errno: 0
 26:085 czekam na śmierć
 26:086 czekam na śmierć
 26:087 dzieci poszły jestem wolny
-26:087 zebrałem dziecko: BŁĄD errno: 10
 26:087 zebrałem dziecko: 119 errno: 0
+26:087 zebrałem dziecko: BŁĄD errno: 10
 26:088 czekałem szybko: PUSTO errno: 0
 26:090 zmieniam ojca: -1 errno: 1
 26:091 czekałem szybko: BŁĄD errno: 10
 26:092 czekałem szybko: BŁĄD errno: 10
-26:093 czekałem szybko: BŁĄD errno: 10
 26:093 czekałem szybko: 125 errno: 0
+26:093 czekałem szybko: BŁĄD errno: 10
 26:094 dzieci poszły jestem wolny
-26:094 zebrałem dziecko: BŁĄD errno: 10
 26:094 zebrałem dziecko: 126 errno: 0
-26:095 czekałem szybko: BŁĄD errno: 10
+26:094 zebrałem dziecko: BŁĄD errno: 10
 26:095 czekałem szybko: 127 errno: 0
+26:095 czekałem szybko: BŁĄD errno: 10
 26:096 czekałem szybko: BŁĄD errno: 10
 26:097 czekałem szybko: BŁĄD errno: 10
 26:098 dzieci poszły jestem wolny
@@ -947,11 +947,10 @@
 26;123 pid: 123, ppid: INIT, oppid: 91
 26;124 pid: 124, ppid: 0, oppid: 92
 26;126 pid: 126, ppid: 94, oppid: 94
-27:000 (arcy)zebrałem dziecko: 2 errno: 0
-27:000 (arcy)zebrałem dziecko: 6 errno: 0
 27:000 (arcy)zebrałem dziecko: 11 errno: 0
 27:000 (arcy)zebrałem dziecko: 13 errno: 0
 27:000 (arcy)zebrałem dziecko: 15 errno: 0
+27:000 (arcy)zebrałem dziecko: 2 errno: 0
 27:000 (arcy)zebrałem dziecko: 20 errno: 0
 27:000 (arcy)zebrałem dziecko: 30 errno: 0
 27:000 (arcy)zebrałem dziecko: 34 errno: 0
@@ -963,6 +962,7 @@
 27:000 (arcy)zebrałem dziecko: 57 errno: 0
 27:000 (arcy)zebrałem dziecko: 58 errno: 0
 27:000 (arcy)zebrałem dziecko: 59 errno: 0
+27:000 (arcy)zebrałem dziecko: 6 errno: 0
 27:000 (arcy)zebrałem dziecko: 63 errno: 0
 27:000 (arcy)zebrałem dziecko: 67 errno: 0
 27:001 czekałem szybko: BŁĄD errno: 10
@@ -1007,7 +1007,7 @@
 27:061 zebrałem dziecko: BŁĄD errno: 10
 27:062 czekałem szybko: BŁĄD errno: 10
 27:064 dzieci poszły jestem wolny
-27:064 zebrałem dziecko: BŁĄD errno: 10
+27:064 zebrałem dziecko: 122 errno: 0
 27:064 zebrałem dziecko: 66 errno: 0
 27:064 zebrałem dziecko: 72 errno: 0
 27:064 zebrałem dziecko: 74 errno: 0
@@ -1015,25 +1015,25 @@
 27:064 zebrałem dziecko: 82 errno: 0
 27:064 zebrałem dziecko: 90 errno: 0
 27:064 zebrałem dziecko: 96 errno: 0
-27:064 zebrałem dziecko: 122 errno: 0
+27:064 zebrałem dziecko: BŁĄD errno: 10
 27:065 zmieniam ojca: -1 errno: 1
-27:066 czekałem szybko: PUSTO errno: 0
 27:066 czekałem szybko: 70 errno: 0
 27:066 czekałem szybko: 98 errno: 0
-27:068 czekałem szybko: PUSTO errno: 0
+27:066 czekałem szybko: PUSTO errno: 0
 27:068 czekałem szybko: 76 errno: 0
-27:069 czekałem szybko: PUSTO errno: 0
+27:068 czekałem szybko: PUSTO errno: 0
 27:069 czekałem szybko: 77 errno: 0
+27:069 czekałem szybko: PUSTO errno: 0
 27:074 a ja kończę
 27:078 zmieniam ojca: -1 errno: 13
 27:081 czekałem szybko: PUSTO errno: 0
 27:082 zmieniam ojca: 0 errno: 0
 27:085 dzieci poszły jestem wolny
-27:085 zebrałem dziecko: BŁĄD errno: 10
 27:085 zebrałem dziecko: 117 errno: 0
+27:085 zebrałem dziecko: BŁĄD errno: 10
 27:086 dzieci poszły jestem wolny
-27:086 zebrałem dziecko: BŁĄD errno: 10
 27:086 zebrałem dziecko: 118 errno: 0
+27:086 zebrałem dziecko: BŁĄD errno: 10
 27:088 zmieniam ojca: -1 errno: 1
 27:090 zmieniam ojca: -1 errno: 1
 27:091 czekam na śmierć
@@ -1149,11 +1149,11 @@
 27;123 pid: 123, ppid: INIT, oppid: PUSTO
 27;124 pid: 124, ppid: 0, oppid: 92
 27;126 pid: 126, ppid: 94, oppid: 94
-28:000 (arcy)zebrałem dziecko: 7 errno: 0
 28:000 (arcy)zebrałem dziecko: 27 errno: 0
 28:000 (arcy)zebrałem dziecko: 41 errno: 0
 28:000 (arcy)zebrałem dziecko: 61 errno: 0
 28:000 (arcy)zebrałem dziecko: 64 errno: 0
+28:000 (arcy)zebrałem dziecko: 7 errno: 0
 28:001 czekałem szybko: BŁĄD errno: 10
 28:003 zmieniam ojca: -1 errno: 1
 28:004 dzieci poszły jestem wolny
@@ -1192,12 +1192,12 @@
 28:060 dzieci poszły jestem wolny
 28:060 zebrałem dziecko: BŁĄD errno: 10
 28:062 czekałem szybko: BŁĄD errno: 10
-28:065 czekałem szybko: BŁĄD errno: 10
 28:065 czekałem szybko: 73 errno: 0
+28:065 czekałem szybko: BŁĄD errno: 10
 28:066 zmieniam ojca: -1 errno: 1
 28:068 czekam na śmierć
-28:069 czekałem szybko: PUSTO errno: 0
 28:069 czekałem szybko: 93 errno: 0
+28:069 czekałem szybko: PUSTO errno: 0
 28:078 czekałem szybko: PUSTO errno: 0
 28:081 zmieniam ojca: -1 errno: 1
 28:082 czekałem szybko: PUSTO errno: 0
@@ -1295,16 +1295,16 @@
 28;122 pid: 122, ppid: 64, oppid: PUSTO
 28;123 pid: 123, ppid: INIT, oppid: PUSTO
 28;126 pid: 126, ppid: 94, oppid: 94
-29:000 (arcy)zebrałem dziecko: 4 errno: 0
+29:000 (arcy)zebrałem dziecko: 100 errno: 0
+29:000 (arcy)zebrałem dziecko: 113 errno: 0
+29:000 (arcy)zebrałem dziecko: 124 errno: 0
 29:000 (arcy)zebrałem dziecko: 23 errno: 0
 29:000 (arcy)zebrałem dziecko: 25 errno: 0
 29:000 (arcy)zebrałem dziecko: 32 errno: 0
 29:000 (arcy)zebrałem dziecko: 33 errno: 0
+29:000 (arcy)zebrałem dziecko: 4 errno: 0
 29:000 (arcy)zebrałem dziecko: 53 errno: 0
 29:000 (arcy)zebrałem dziecko: 60 errno: 0
-29:000 (arcy)zebrałem dziecko: 100 errno: 0
-29:000 (arcy)zebrałem dziecko: 113 errno: 0
-29:000 (arcy)zebrałem dziecko: 124 errno: 0
 29:001 czekałem szybko: BŁĄD errno: 10
 29:003 czekałem szybko: BŁĄD errno: 10
 29:005 czekałem szybko: BŁĄD errno: 10
@@ -1340,13 +1340,13 @@
 29:065 czekałem szybko: BŁĄD errno: 10
 29:066 zmieniam ojca: -1 errno: 1
 29:068 dzieci poszły jestem wolny
-29:068 zebrałem dziecko: BŁĄD errno: 10
 29:068 zebrałem dziecko: 92 errno: 0
+29:068 zebrałem dziecko: BŁĄD errno: 10
 29:069 czekałem szybko: PUSTO errno: 0
 29:078 czekam na śmierć
 29:081 czekałem szybko: BŁĄD errno: 10
-29:082 czekałem szybko: BŁĄD errno: 10
 29:082 czekałem szybko: 114 errno: 0
+29:082 czekałem szybko: BŁĄD errno: 10
 29:088 a ja kończę
 29:090 dzieci poszły jestem wolny
 29:090 zebrałem dziecko: BŁĄD errno: 10
@@ -1459,8 +1459,8 @@
 30:066 zmieniam ojca: -1 errno: 1
 30:069 czekałem szybko: PUSTO errno: 0
 30:078 dzieci poszły jestem wolny
-30:078 zebrałem dziecko: BŁĄD errno: 10
 30:078 zebrałem dziecko: 94 errno: 0
+30:078 zebrałem dziecko: BŁĄD errno: 10
 30:081 czekałem szybko: BŁĄD errno: 10
 30:082 czekałem szybko: BŁĄD errno: 10
 30:092 a ja kończę
@@ -1595,11 +1595,11 @@
 31;123 pid: 123, ppid: INIT, oppid: PUSTO
 31;126 pid: 126, ppid: 94, oppid: 94
 32:000 (arcy)zebrałem dziecko: 1 errno: 0
-32:000 (arcy)zebrałem dziecko: 3 errno: 0
+32:000 (arcy)zebrałem dziecko: 109 errno: 0
 32:000 (arcy)zebrałem dziecko: 21 errno: 0
+32:000 (arcy)zebrałem dziecko: 3 errno: 0
 32:000 (arcy)zebrałem dziecko: 54 errno: 0
 32:000 (arcy)zebrałem dziecko: 97 errno: 0
-32:000 (arcy)zebrałem dziecko: 109 errno: 0
 32:005 a ja kończę
 32:008 a ja kończę
 32:009 dzieci poszły jestem wolny
@@ -1654,11 +1654,11 @@
 32;111 pid: 111, ppid: 79, oppid: 79
 32;116 pid: 116, ppid: INIT, oppid: PUSTO
 32;123 pid: 123, ppid: INIT, oppid: PUSTO
+33:000 (arcy)zebrałem dziecko: 36 errno: 0
 33:000 (arcy)zebrałem dziecko: 5 errno: 0
 33:000 (arcy)zebrałem dziecko: 8 errno: 0
-33:000 (arcy)zebrałem dziecko: 9 errno: 0
-33:000 (arcy)zebrałem dziecko: 36 errno: 0
 33:000 (arcy)zebrałem dziecko: 81 errno: 0
+33:000 (arcy)zebrałem dziecko: 9 errno: 0
 33:010 czekałem szybko: BŁĄD errno: 10
 33:018 zmieniam ojca: -1 errno: 1
 33:019 czekałem szybko: BŁĄD errno: 10
@@ -1702,8 +1702,8 @@
 34:048 czekałem szybko: BŁĄD errno: 10
 34:055 czekałem szybko: BŁĄD errno: 10
 34:062 czekałem szybko: BŁĄD errno: 10
-34:069 czekałem szybko: BŁĄD errno: 10
 34:069 czekałem szybko: 85 errno: 0
+34:069 czekałem szybko: BŁĄD errno: 10
 34:082 a ja kończę
 34:096 czekałem szybko: BŁĄD errno: 10
 34:101 a ja kończę
@@ -1815,26 +1815,43 @@
 44;048 pid: 48, ppid: 0, oppid: 0
 45:048 a ja kończę
 45;048 pid: 48, ppid: 0, oppid: 0
-46:000 (arcy)zebrałem dziecko: BŁĄD errno: 10
 46:000 (arcy)zebrałem dziecko: 48 errno: 0
+46:000 (arcy)zebrałem dziecko: BŁĄD errno: 10
 46;000 pid: 0, ppid: SHELL, oppid: SHELL
 46;000 pid: 0, ppid: SHELL, oppid: SHELL
-D
-MAPA BŁĄD BŁĄD
-MAPA PUSTO PUSTO
 MAPA 0 0
 MAPA 1 1
-MAPA 2 2
-MAPA 3 3
-MAPA 4 4
-MAPA 5 5
-MAPA 6 6
-MAPA 7 7
-MAPA 8 8
-MAPA 9 9
 MAPA 10 10
+MAPA 100 100
+MAPA 101 101
+MAPA 102 102
+MAPA 103 103
+MAPA 104 104
+MAPA 105 105
+MAPA 106 106
+MAPA 107 107
+MAPA 108 108
+MAPA 109 109
 MAPA 11 11
+MAPA 110 110
+MAPA 111 111
+MAPA 112 112
+MAPA 113 113
+MAPA 114 114
+MAPA 115 115
+MAPA 116 116
+MAPA 117 117
+MAPA 118 118
+MAPA 119 119
 MAPA 12 12
+MAPA 120 120
+MAPA 121 121
+MAPA 122 122
+MAPA 123 123
+MAPA 124 124
+MAPA 125 125
+MAPA 126 126
+MAPA 127 127
 MAPA 13 13
 MAPA 14 14
 MAPA 15 15
@@ -1842,6 +1859,7 @@ MAPA 16 16
 MAPA 17 17
 MAPA 18 18
 MAPA 19 19
+MAPA 2 2
 MAPA 20 20
 MAPA 21 21
 MAPA 22 22
@@ -1852,6 +1870,7 @@ MAPA 26 26
 MAPA 27 27
 MAPA 28 28
 MAPA 29 29
+MAPA 3 3
 MAPA 30 30
 MAPA 31 31
 MAPA 32 32
@@ -1862,6 +1881,7 @@ MAPA 36 36
 MAPA 37 37
 MAPA 38 38
 MAPA 39 39
+MAPA 4 4
 MAPA 40 40
 MAPA 41 41
 MAPA 42 42
@@ -1872,6 +1892,7 @@ MAPA 46 46
 MAPA 47 47
 MAPA 48 48
 MAPA 49 49
+MAPA 5 5
 MAPA 50 50
 MAPA 51 51
 MAPA 52 52
@@ -1882,6 +1903,7 @@ MAPA 56 56
 MAPA 57 57
 MAPA 58 58
 MAPA 59 59
+MAPA 6 6
 MAPA 60 60
 MAPA 61 61
 MAPA 62 62
@@ -1892,63 +1914,40 @@ MAPA 66 66
 MAPA 67 67
 MAPA 68 68
 MAPA 69 69
+MAPA 7 7
 MAPA 70 70
 MAPA 71 71
 MAPA 72 72
 MAPA 73 73
 MAPA 74 74
-MAPA 76 76
 MAPA 75 75
+MAPA 76 76
 MAPA 77 77
 MAPA 78 78
 MAPA 79 79
+MAPA 8 8
 MAPA 80 80
 MAPA 81 81
 MAPA 82 82
-MAPA 84 84
-MAPA 88 88
 MAPA 83 83
+MAPA 84 84
 MAPA 85 85
-MAPA 89 89
 MAPA 86 86
-MAPA 90 90
-MAPA 92 92
 MAPA 87 87
+MAPA 88 88
+MAPA 89 89
+MAPA 9 9
+MAPA 90 90
 MAPA 91 91
+MAPA 92 92
 MAPA 93 93
 MAPA 94 94
 MAPA 95 95
 MAPA 96 96
 MAPA 97 97
 MAPA 98 98
-MAPA 100 100
-MAPA 104 104
-MAPA 112 112
 MAPA 99 99
-MAPA 101 101
-MAPA 105 105
-MAPA 113 113
-MAPA 102 102
-MAPA 106 106
-MAPA 114 114
-MAPA 108 108
-MAPA 116 116
-MAPA 120 120
-MAPA 103 103
-MAPA 107 107
-MAPA 115 115
-MAPA 109 109
-MAPA 117 117
-MAPA 121 121
-MAPA 110 110
-MAPA 118 118
-MAPA 122 122
-MAPA 124 124
-MAPA 111 111
-MAPA 119 119
-MAPA 123 123
-MAPA 125 125
-MAPA 126 126
-MAPA 127 127
+MAPA BŁĄD BŁĄD
 MAPA INIT INIT
+MAPA PUSTO PUSTO
 MAPA SHELL SHELL
