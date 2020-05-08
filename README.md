@@ -1,4 +1,4 @@
-użycie:
+użycie: (seedy na razie to 1 i 2)
 ```bash
 #na minixe:
 make test-basic
