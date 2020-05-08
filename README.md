@@ -5,8 +5,8 @@ make test-basic
 echo <seed> | ./test-basic
 ```
 
-czekamy aż się skończy i `ps ax | grep test-basic` nic nie wypisze
-może zająć z minutę 
+Czekamy aż się skończy i `ps ax | grep test-basic` nic nie wypisze poza samym sobą.
+Może zająć z minutę.
 
 ściągamy output.txt
 
