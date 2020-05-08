@@ -1,4 +1,4 @@
-użycie: (seedy na razie to 1 i 2)
+użycie: (seedy na razie to 1, 2, 3, 4)
 ```bash
 #na minixe:
 make test-basic
@@ -20,5 +20,9 @@ cat part_output*.txt >output.txt
 ```bash
 #na hoście:
 ./change.py output.txt >myRes<seed>
+
+# dla zwykłej wersji
 diff res<seed> myRes<seed>
+# albo dla uproszczonej
+diff res<seed>_alt myRes<seed>
 ```

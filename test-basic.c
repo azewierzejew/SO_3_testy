@@ -180,11 +180,12 @@ int main() {
 			found = 0;
 			errno = 0;
 			pid_t res = wait(&status);
+			int error = errno;
 			counter = WEXITSTATUS(status);
 			printf(FMT "(arcy)zebrałem dziecko: P%dID errno: %d\n", counter, nr, res, errno);
 			deb();
 			if (res < 0) {
-				if (errno == ECHILD) {
+				if (error == ECHILD) {
 					found = 0;
 				} else {
 					printf("FATAL wait %d\n", errno);
@@ -223,8 +224,9 @@ int main() {
 				do {
 					errno = 0;
 					res = waitpid(-1, &status, WNOHANG);
+					int error = errno;
 					printf(FMT "czekałem szybko: P%dID errno: %d\n", counter, nr, res, errno);
-					if (res < 0 && errno != ECHILD && errno != EAGAIN) {
+					if (res < 0 && error != ECHILD && error != EAGAIN) {
 						printf(FMT "FATAL wait na dzieci szybko %d %d\n", counter, nr, res, errno);
 					}
 				} while (res > 0);
@@ -243,8 +245,9 @@ int main() {
 				while (res > 0) {
 					errno = 0;
 					res = wait(&status);
+					int error = errno;
 					printf(FMT "zebrałem dziecko: P%dID errno: %d\n", counter, nr, res, errno);
-					if (res < 0 && errno != ECHILD) {
+					if (res < 0 && error != ECHILD) {
 						printf(FMT "FATAL wait na dzieci %d %d\n", counter, nr, res, errno);
 					}
 				}
