@@ -19,12 +19,15 @@ pid_t me = 0;
 
 char buffer[1000];
 int len;
+int lenRes;
 int output;
 
 #define printf(...) \
 do { \
 	len = snprintf(buffer, 100, __VA_ARGS__); \
-	write(output, buffer, len); \
+	if ((lenRes = write(output, buffer, len)) != len) { \
+		fprintf("partial write %d of %d in %s\n", len, lenRes, buffer); \
+	} \
 } while(0)
 
 void deb() {
@@ -54,6 +57,11 @@ unsigned int rander() {
 	return lastRand / 6767;
 }
 
+const char *getname() {
+	snprint(buffer, 100, "output%03d.txt", nr);
+	return buffer;
+}
+
 int main() {
 	int status;
 	ullong start = mtime();
@@ -64,8 +72,8 @@ int main() {
 	
 	close(0);
 	close(1);
-	output = open("output.txt", O_WRONLY | O_CREAT);
-
+	output = open(getname(), O_CREAT);
+	
 	if (output < 0) {
 		fprintf(stderr, "nie ma pliku\n");
 		exit(1);
@@ -84,6 +92,17 @@ int main() {
 			case 0:
 				me = getpid();
 				nr = i;
+				
+				if(close(output) < 0) {
+					fprintf(stderr, "nie możńa zamknąć pliku\n");
+					exit(1);
+				}
+				output = open(getname(), O_CREAT);
+				if (output < 0) {
+					fprintf(stderr, "nie ma pliku\n");
+					exit(1);
+				}
+				
 				printf(FMT "jestem nowy P%dID\n", counter++, nr, getpid());
 				deb();
 				jestemDzieciem = 1;
@@ -110,6 +129,18 @@ int main() {
 				case 0:
 					me = getpid();
 					nr = nr + count;
+					
+				
+					if(close(output) < 0) {
+						fprintf(stderr, "nie możńa zamknąć pliku\n");
+						exit(1);
+					}
+					output = open(getname(), O_CREAT);
+					if (output < 0) {
+						fprintf(stderr, "nie ma pliku\n");
+						exit(1);
+					}
+					
 					printf(FMT "jestem nowy P%dID\n", counter++, nr, getpid());
 					deb();
 					break;
@@ -225,5 +256,9 @@ int main() {
 		ullong roznica = (mtime() - start) - kolej;
 		if (roznica > 30) fprintf(stderr, FMT "Czas %llu,%llu,%llu niebezpiecznie duży\n", counter, nr, kolej, poczatek, roznica);
 	}
-	close(output);
+				
+	if(close(output) < 0) {
+		fprintf(stderr, "nie możńa zamknąć pliku\n");
+		exit(1);
+	}
 }
